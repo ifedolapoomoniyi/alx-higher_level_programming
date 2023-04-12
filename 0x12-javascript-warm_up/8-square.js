@@ -1,15 +1,13 @@
 #!/usr/bin/node
 
-const integer = parseInt(process.argv[2]);
+// Prints a square
 
-if (!integer) {
+const size = parseInt(process.argv[2]);
+
+if (isNaN(size)) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < integer; i++) {
-    let row = 'x';
-    while (row.length < integer) {
-      row = row + 'x';
-    }
-    console.log(row);
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
   }
 }
