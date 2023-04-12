@@ -1,17 +1,11 @@
 #!/usr/bin/node
 
-const args = process.argv;
-let highest = args[2];
+// Searches the second biggest integer in the list of arguments
 
-if (args.length < 3) {
-    console.log(0)
-} else if (args.length < 4) {
-    console.log(0)
+if (process.argv.length < 4) {
+  console.log('0');
 } else {
-    for (let i = 2; i < args.length; i++) {
-        if (args[i] > highest ) {
-          highest = args[i];
-        }
-      }
-      console.log(highest)
+  const args = process.argv.slice(2);
+  args.sort((a, b) => b - a);
+  console.log(args[1]);
 }
