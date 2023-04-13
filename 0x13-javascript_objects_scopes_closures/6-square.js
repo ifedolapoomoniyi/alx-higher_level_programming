@@ -10,11 +10,11 @@ class Square extends parentSquare {
     for (let i = 0; i < this.height; i++) {
       let horizontal = '';
       for (let j = 0; j < this.width; j++) {
-        horizontal = horizontal + c
+        horizontal = horizontal + c;
       }
-      console.log(horizontal)
+      console.log(horizontal);
     }
   }
 }
 
-module.exports = Square
+module.exports = Square;
