@@ -6,4 +6,4 @@ const newList = list.map((item, index) => {
 });
 
 console.log(list);
-console.log(newList)
+console.log(newList);
