@@ -2,10 +2,9 @@
 
 const fs = require('fs');
 
-const file1 = fs.readFileSync(process.argv[2], 'utf-8');
-const file2 = fs.readFileSync(process.argv[3], 'utf-8');
+// Read from each file
+const a = fs.readFileSync(process.argv[2], 'utf8');
+const b = fs.readFileSync(process.argv[3], 'utf8');
 
-const concat = file1.concat(file2);
-console.log(concat);
-
-fs.writeFileSync(process.argv[4], concat);
+// Write the concatenated content
+fs.writeFileSync(process.argv[4], a + b);
