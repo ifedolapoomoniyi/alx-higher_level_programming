@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Defines a function that finds the peak of an unsorted array of numbers"""
 
+
 def find_peak(list_of_integers):
     """"Sorts an array and returns the peak"""
 
